@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">    
+        <!-- Button trigger modal -->
+       <h2>"Te invito a probar este ejercicio"</h2>
+       <hr>
+       <blockquote>
+        <p>Ingresa 4 números,luego presiona el botón <strong>Comprobar</strong> y mira lo que sucede.</p>
+       </blockquote>
+       <hr>
+    <div class="col-sm-6">
+      <form class="numbersForm"  action="">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="num1" type="text" class="validate">
+            <label for="num1">Número A</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="num2" type="text" class="validate">
+            <label for="num2">Número B</label>
+          </div>
+       </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="num3" type="text" class="validate">
+            <label for="num3">Número C</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="num4" type="text" class="validate">
+            <label for="num4">Número D</label>
+          </div>
+        </div>
+        <hr>        
+     </form>
+     <hr>
+     <button type="button" onclick="limpiar()" class="btn btn-secondary" >Limpiar</button>
+     <button type="button" onclick="comprobar()" class="btn btn-primary" >Comprobar</button>
+     <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#numbersModal">Probar</button>-->
+     <hr>
+     <div id="res" class="message result-message"></div>
+
+    </div>       
+    
+
+    
+    
+  
+  <!-- Modal -->
+      <div class="modal fade" id="numbersModal" tabindex="-1" aria-labelledby="numbersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title justify-content-center" id="numbersModalLabel"><strong>Mayor y Menor</strong></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                         
+                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+</div>
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="./index1.js"></script>
+</body>
+</html>
